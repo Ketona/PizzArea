@@ -28,6 +28,8 @@ html{
 body{
 	/* Workaround for some mobile browsers */
 	min-height:100%;
+
+	font-family: 'Droid Serif', serif;
 }
 
 
@@ -36,6 +38,50 @@ body{
 --------------------------*/
 
 
+/* Language stuff */
+#langs ul.menu-tr {
+  position:absolute;
+  top:20px;
+  right:40px;
+  margin:0;
+  padding:0;
+}
+ul.menu-tr li {
+  list-style-type:none;
+  display:inline-block;
+  /* needed to stop elements dropping down onto the next line */
+  float:left;  
+
+  font-size:20px;
+}
+
+ul.menu-tr li + li::before {
+  text-align:center;
+  padding-left:3px;
+  padding-right:3px;
+  font-size:20px;
+  vertical-align:top;
+  color:#111821;
+  content:"|";
+  /* needed to stop elements dropping down onto the next line */
+  float:left;
+}
+ul.menu-tr li a {
+  display:block;
+  /* needed to stop elements dropping down onto the next line */
+  float:left;
+  text-decoration:none;
+  color:#111821;
+}
+
+ul.menu-tr li a:hover {
+	border-radius:5px;
+	color:grey;
+	text-decoration:underline;
+}
+
+
+/* Logo */
 
 
 /*-------------------------
@@ -70,7 +116,7 @@ body{
 	/*padding: 0 10px;*/
 }
 #container {
-	background-color: rgba(255, 255, 255, 0.5);
+	background-color: rgba(255, 255, 255, 0.7);
 	margin: 40px auto  30px;
 	position: relative;
 	padding: 150px 50px;
