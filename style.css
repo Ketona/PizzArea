@@ -16,8 +16,8 @@
 
 html{
 	/* This image will be displayed fullscreen */
-	background:url('img/bg.jpg') no-repeat center ;
-	opacity: 0.3;
+	background:url('img/bg.jpg') no-repeat center 10%;
+	/*opacity: 0.3;*/
 	
 	min-height:100%;
 	
@@ -35,9 +35,47 @@ body{
 	Header Styles
 --------------------------*/
 
+
+
+
+/*-------------------------
+	Slider Styles
+--------------------------*/
+
+#slides {
+  position:relative;
+  top:0px;
+  left:0px;
+  width:100%;  
+}
+#slides-panel {
+  position:absolute;
+  bottom:0;
+  left:0;
+  width:100%;
+}
+
+.slider-image{
+	width:100%;
+	border-radius:5px;
+}
+
 /*-------------------------
 	Index page Styles
 --------------------------*/
+
+#outsideContainer {
+	/*padding: 0 10px;*/
+}
+#container {
+	margin: 0 auto;
+	position: relative;
+	padding-top: 127px;
+	padding-bottom: 60px;
+	width: 100%; 
+	max-width: 1100px; 
+	min-width: 300px;
+}
 
 /*-------------------------
 	Footer Styles
