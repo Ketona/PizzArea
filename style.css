@@ -1,0 +1,45 @@
+/*-------------------------
+	Simple reset
+--------------------------*/
+
+
+*{
+	margin:0;
+	padding:0;
+}
+
+
+/*-------------------------
+	General Styles
+--------------------------*/
+
+
+html{
+	/* This image will be displayed fullscreen */
+	background:url('img/bg.jpg') no-repeat center ;
+	opacity: 0.3;
+	
+	min-height:100%;
+	
+	/* Background cover size*/
+	background-size:cover;
+}
+
+body{
+	/* Workaround for some mobile browsers */
+	min-height:100%;
+}
+
+
+/*-------------------------
+	Header Styles
+--------------------------*/
+
+/*-------------------------
+	Index page Styles
+--------------------------*/
+
+/*-------------------------
+	Footer Styles
+--------------------------*/
+
