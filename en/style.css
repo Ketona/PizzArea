@@ -1,0 +1,284 @@
+/*-------------------------
+	Simple reset
+--------------------------*/
+
+
+*{
+	margin:0;
+	padding:0;
+}
+
+
+/*-------------------------
+	General Styles
+--------------------------*/
+
+
+html{
+	/* This image will be displayed fullscreen */
+	background:url('img/bg.jpg') no-repeat center 10%;
+	/*opacity: 0.3;*/
+	
+	min-height:100%;
+	
+	/* Background cover size*/
+	background-size:cover;
+}
+
+body{
+	/* Workaround for some mobile browsers */
+	min-height:100%;
+
+	font-family: 'Droid Serif', serif;
+}
+
+
+/*-------------------------
+	Header Styles
+--------------------------*/
+
+
+/* Language stuff */
+#langs ul.menu-tr {
+  position:absolute;
+  top:20px;
+  right:47px;
+  margin:0;
+  padding:0;
+}
+ul.menu-tr li {
+  list-style-type:none;
+  display:inline-block;
+  /* needed to stop elements dropping down onto the next line */
+  float:left;  
+
+  font-size:20px;
+}
+
+ul.menu-tr li + li::before {
+  text-align:center;
+  padding-left:3px;
+  padding-right:3px;
+  font-size:20px;
+  vertical-align:top;
+  color:#111821;
+  content:"|";
+  /* needed to stop elements dropping down onto the next line */
+  float:left;
+}
+ul.menu-tr li a {
+  display:block;
+  /* needed to stop elements dropping down onto the next line */
+  float:left;
+  text-decoration:none;
+  color:#111821;
+}
+
+ul.menu-tr li a:hover {
+	border-radius:5px;
+	color:grey;
+	text-decoration:underline;
+}
+
+
+/* Logo */
+
+#logo {
+  position:absolute;
+  top:30px;
+  left:45px;
+  border: 4px solid #DB874F;
+  width: 330px;
+  height: 110px;
+  border-radius: 5%;
+  background-color: rgba(242, 125, 46, 0.3);
+
+}
+#logoText {
+  position: absolute;
+  left: 130px;
+  text-align:left;
+  line-height:70px;
+  font-size: 40px;
+  color: #DE2626;
+}
+
+#logo-img{
+	position: absolute;
+	max-width: 100px;
+	top:5px;
+	left: 30px
+}
+
+/* Menu */
+
+#menubarbgrnd {
+  position:absolute;
+  top:97px;
+  left:400px;
+  width:100%;
+  max-width: 750px;
+  height:50px;
+  border-radius: 5px;
+  background-color:#DB874F;
+}
+ul.menu {
+  position:absolute;
+  top:97px;
+  left:400px;
+  height: 50px;
+  margin:0;
+  padding:0;
+  margin-left:20px;
+}
+ul.menu li {
+  list-style-type:none;
+  display:inline-block;
+  height: 50px;
+  /* needed to stop elements dropping down onto the next line */
+  float:left;  
+}
+ul.menu li {
+  font-size:25px;  
+  height: 40px;
+   /* position:relative style added for sub-menu absolute positioning */
+  position:relative;
+}
+ul.menu li + li::before {
+  text-align:center;
+  padding-left:3px;
+  padding-right:3px;
+  font-size:25px;
+  vertical-align:center;
+  padding-top: 10px;
+  color:#808080;
+  content:"|";
+  /* needed to stop elements dropping down onto the next line */
+  float:left;
+}
+ul.menu li a {
+  display:block;
+  height:40px;
+  padding-top: 10px;
+  /* needed to stop elements dropping down onto the next line */
+  float:left;
+  text-decoration:none;
+  color:#e0e0e0;
+  padding-left:20px;
+  padding-right:20px;
+}
+ul.menu li a:hover {
+	border-radius:5px;
+	color:white;
+  background: linear-gradient(rgb(255,149,56), rgb(237,161,95));
+}
+
+ul.menu li a.selected {
+  border-radius:5px;
+  color:white;
+  background: linear-gradient(rgb(255,149,56), rgb(237,161,95));
+}
+
+/* FB logo*/
+
+#fb {
+	width: 40px;
+	margin-top: 5px;
+	margin-left: 145px;
+}
+
+/*-------------------------
+	Slider Styles
+--------------------------*/
+
+#slides {
+  position:relative;
+  top:0px;
+  left:0px;
+  height: 450px;
+  width:100%;  
+}
+#slides-panel {
+  position:absolute;
+  bottom:0;
+  left:0;
+  width:100%;
+}
+
+.slider-image{
+	height: 450px;
+	width:100%;
+	border-radius:5px;
+}
+
+/*-------------------------
+	Index page Styles
+--------------------------*/
+
+#outsideContainer {
+	/*padding: 0 10px;*/
+}
+#container {
+	background-color: rgba(255, 255, 255, 0.7);
+	margin: 40px auto  30px;
+	position: relative;
+	padding: 150px 50px 20px;
+	border-radius: 1%;
+
+	width: 100%; 
+	max-width: 1100px; 
+	min-width: 300px;
+}
+
+/*-------------------------
+	Footer Styles
+--------------------------*/
+
+footer {
+	text-align: center;
+	margin-top: 50px;
+}
+
+footer p{
+	font-size: 18px;
+	color: grey;
+}
+
+
+/*-------------------------
+  Order Page Styles
+--------------------------*/
+
+label, textarea, select, input {
+  margin-left: 20px;
+}
+
+label {
+  display: inline;
+}
+
+select {
+  width: 150px;
+  display: block;
+}
+
+textarea, input {
+  display: block;
+  margin-bottom: 10px;
+}
+
+textarea {
+  min-height: 60px;
+}
+
+#selab{
+  display: block;
+}
+
+span {
+  display: block;
+}
+
+.overflow {
+  height: 200px;
+}

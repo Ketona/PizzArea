@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="uft-8">
+		<title>PizzArea</title>
+
+
+		<link rel="stylesheet" href="jquery-ui-1.11.2.custom/jquery-ui.min.css">
+		<link rel="stylesheet" type="text/css" href="style.css">
+
+		<link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
+		<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+   		<script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="http://malsup.github.com/jquery.cycle2.js"></script>
+	</head>
+	<body>
+
+		<div id="outsideContainer">
+			<div id="container">
+
+				<header>
+					<div id="logo">
+			          <a href="index.html">
+				          <span id="logoText">PizzArea</span>
+				          <img id="logo-img" src="img/logo/pizza.svg">
+			          </a>
+					</div>
+					<div id="langs">
+						<ul class="menu-tr">
+						    <li><a href="#">En</a></li>
+						    <li><a href="../ge/order.html">Ge</a></li>
+						  </ul>
+					</div>
+					<div id="menubarbgrnd">
+			        </div>
+			        <ul class="menu">
+			          <li>
+			            <a href="pizza.html">Pizza</a>
+			          </li>
+			          <li>
+			            <a href="drinks.html">Drinks</a>
+			          </li>
+			          <li>
+			            <a class="selected" href="order.html">Order</a>
+			          </li>
+			          <li>
+			            <a href="contact.html">Contact</a>
+			          </li>
+			          <a href="http://facebook.com"><img id="fb" src="img/logo/fb.png"></a>
+			        </ul>
+				</header>
+
+				<section>
+					   <form action="http://voyager.english-georgian.ge/submit.php" method="GET">
+				        <input type="hidden" name="user" value="kza">
+				        <fieldset>
+						  <legend>Flower Delivery Info:</legend>
+
+				          <label for="name">Name: </label><input type="text" name="name" id="name">
+				          <label for="surname">Surname: </label><input type="text" name="surname" id="surname">
+				          <label for="email">Email: </label><input type="email" name="email" id="email">
+
+				          <label for="address">Address: </label><textarea id="address"></textarea>
+				          <label for="zip">ZIP CODE:</label><input type="text" name="zip" id="zip">
+				          <label for="tel">Phone Number: </label><input type="tel" name="tel" id="tel">
+
+
+				          <label for="pizza" id="selab">Select Pizza</label>
+				          <select name="pizza" id="pizza" value="select">
+				            <option>Supreme</option>
+				            <option>Meat</option>
+				            <option>Veggie</option>
+				            <option>Pepperoni</option>
+				            <option>Cheese</option>
+				            <option>BBQ</option>
+				          </select><br>
+
+				          <label for="size">Choose Pizza Size</label>
+				          <select name="size" id="size" value="select">
+				            <option>Small</option>
+				            <option>Medium</option>
+				            <option>Large</option>
+				          </select><br>
+
+				          <label for="quantity">Quantity: </label>
+				          <input name="quantiry" id="quantity" value="1">
+
+				          <label for="drink">Choose Drink</label>
+				          <select name="drink" id="drink" value="select">
+				            <option>Coke</option>
+				            <option>Pepsi</option>
+				            <option>Fanta</option>
+				            <option>Sprite</option>
+				            <option>Orange Juice</option>
+				            <option>Water</option>
+				          </select><br>
+
+				          <label for="size">Select Size (liters)</label>
+				          <select name="size" id="size" value="select">
+				            <option>0.5</option>
+				            <option>1</option>
+				            <option>1.5</option>
+				            <option>2</option>
+				          </select><br>
+
+				          <label for="quantity">Quantity: </label>
+				          <input name="quantiry" id="quantity" value="1">
+
+				          <input type="submit"  value="Submit">
+				        </fieldset>
+				      </form>
+				</section>
+
+				<footer>
+		      		<p>&copy Keti Zazarashvili</p>
+		      	</footer>
+	      	</div>
+      	</div>
+		
+	</body>
+</html>

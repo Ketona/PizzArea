@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>პიცარეა</title>
+
+
+		<link rel="stylesheet" href="jquery-ui-1.11.2.custom/jquery-ui.min.css">
+		<link rel="stylesheet" type="text/css" href="style.css">
+
+		<link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
+		<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+   		<script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="http://malsup.github.com/jquery.cycle2.js"></script>
+	</head>
+	<body>
+
+		<div id="outsideContainer">
+			<div id="container">
+
+				<header>
+					<div id="logo">
+			          <a href="index.html">
+				          <span id="logoText">პიცარეა</span>
+				          <img id="logo-img" src="img/logo/pizza.svg">
+			          </a>
+					</div>
+					<div id="langs">
+						<ul class="menu-tr">
+						    <li><a href="../en/order.html">ინგ</a></li>
+						    <li><a href="#">ქარ</a></li>
+						  </ul>
+					</div>
+					<div id="menubarbgrnd">
+			        </div>
+			        <ul class="menu">
+			          <li>
+			            <a href="pizza.html">პიცა</a>
+			          </li>
+			          <li>
+			            <a href="drinks.html">სასმელი</a>
+			          </li>
+			          <li>
+			            <a class="selected" href="order.html">შეკვეთა</a>
+			          </li>
+			          <li>
+			            <a href="contact.html">დაგვიკავშირდით</a>
+			          </li>
+			          <a href="http://facebook.com"><img id="fb" src="img/logo/fb.png"></a>
+			        </ul>
+				</header>
+
+				<section>
+					   <form action="http://voyager.english-georgian.ge/submit.php" method="GET">
+				        <input type="hidden" name="user" value="kza">
+				        <fieldset>
+						  <legend>პიცის მიტანის ინფორმაცია:</legend>
+
+				          <label for="name">სახელი: </label><input type="text" name="name" id="name">
+				          <label for="surname">გვარი: </label><input type="text" name="surname" id="surname">
+				          <label for="email">მეილი: </label><input type="email" name="email" id="email">
+
+				          <label for="address">მისამსრთი: </label><textarea id="address"></textarea>
+				          <label for="zip">საფოსტო კოდი:</label><input type="text" name="zip" id="zip">
+				          <label for="tel">ტელეფონი: </label><input type="tel" name="tel" id="tel">
+
+
+				          <label for="pizza" id="selab">აირჩიეთ პიცა</label>
+				          <select name="pizza" id="pizza" value="select">
+				            <option>სუპრიმი</option>
+				            <option>ხორცის</option>
+				            <option>ვეგენატეანული</option>
+				            <option>პეპერონი</option>
+				            <option>ყველის</option>
+				            <option>ბარბექიუ</option>
+				          </select><br>
+
+				          <label for="size">აირჩიეთ პიცის ზომა</label>
+				          <select name="size" id="size" value="select">
+				            <option>პატარა</option>
+				            <option>საშუალო</option>
+				            <option>დიდი</option>
+				          </select><br>
+
+				          <label for="quantity">რაოდენობა: </label>
+				          <input name="quantiry" id="quantity" value="1">
+
+				          <label for="drink">აირჩიეთ სასმელი</label>
+				          <select name="drink" id="drink" value="select">
+				            <option>კოკა-კოლა</option>
+				            <option>პეფსი</option>
+				            <option>ფანტა</option>
+				            <option>სპრაიტი</option>
+				            <option>ფორთოხლის წვენი</option>
+				            <option>წყალი</option>
+				          </select><br>
+
+				          <label for="size">აირჩიეთ ზომა (ლიტრი)</label>
+				          <select name="size" id="size" value="select">
+				            <option>0.5</option>
+				            <option>1</option>
+				            <option>1.5</option>
+				            <option>2</option>
+				          </select><br>
+
+				          <label for="quantity">რაოდენობა: </label>
+				          <input name="quantiry" id="quantity" value="1">
+
+				          <input type="submit"  value="Submit">
+				        </fieldset>
+				      </form>
+				</section>
+
+				<footer>
+		      		<p>&copy ქეთი ზაზარაშვილი</p>
+		      	</footer>
+	      	</div>
+      	</div>
+		
+	</body>
+</html>
