@@ -110,6 +110,76 @@ ul.menu-tr li a:hover {
 	left: 30px
 }
 
+/* Menu */
+
+#menubarbgrnd {
+  position:absolute;
+  top:97px;
+  left:400px;
+  width:100%;
+  max-width: 750px;
+  height:50px;
+  border-radius: 5px;
+  background-color:#DB874F;
+}
+ul.menu {
+  position:absolute;
+  top:97px;
+  left:400px;
+  height: 50px;
+  margin:0;
+  padding:0;
+  margin-left:20px;
+}
+ul.menu li {
+  list-style-type:none;
+  display:inline-block;
+  height: 50px;
+  /* needed to stop elements dropping down onto the next line */
+  float:left;  
+}
+ul.menu li {
+  font-size:25px;  
+  height: 40px;
+   /* position:relative style added for sub-menu absolute positioning */
+  position:relative;
+}
+ul.menu li + li::before {
+  text-align:center;
+  padding-left:3px;
+  padding-right:3px;
+  font-size:25px;
+  vertical-align:center;
+  padding-top: 10px;
+  color:#808080;
+  content:"|";
+  /* needed to stop elements dropping down onto the next line */
+  float:left;
+}
+ul.menu li a {
+  display:block;
+  height:40px;
+  padding-top: 10px;
+  /* needed to stop elements dropping down onto the next line */
+  float:left;
+  text-decoration:none;
+  color:#e0e0e0;
+  padding-left:20px;
+  padding-right:20px;
+}
+ul.menu li a:hover {
+	border-radius:5px;
+	color:white;
+  background: linear-gradient(rgb(255,149,56), rgb(237,161,95));
+}
+
+/* FB logo*/
+
+#fb {
+	width: 40px;
+	margin-top: 5px;
+	margin-left: 145px;
+}
 
 /*-------------------------
 	Slider Styles
